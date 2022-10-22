@@ -1,0 +1,30 @@
+{
+  "name": "boori",
+  "version": "1.0.0",
+  "main": "out/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "INPUT_FILE=./boori.json node out/index.js",
+    "lint:check": "eslint src/**/*.ts",
+    "lint": "yarn lint:check --fix",
+    "format:check": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.0.2",
+    "@types/node": "^18.11.3",
+    "@types/pdf-parse": "^1.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "2.7.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "luxon": "^3.0.4",
+    "pdf-parse": "^1.1.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.18.12/xlsx-0.18.12.tgz"
+  }
+}

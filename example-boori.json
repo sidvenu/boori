@@ -1,0 +1,40 @@
+[
+  {
+    "type": "Zerodha",
+    "_comment": "(_comment key means this is a comment, you don't need to paste this in your actual boori.json) Zerodha accepts only JSON files currently. You can get this JSON by following the steps mentioned in README",
+    "url": "/Users/Boori/Projects/Boori/input/zerodha.json"
+  },
+  {
+    "type": "Jupiter",
+    "_comment": "Jupiter can accept a folder of PDF files...",
+    "url": "/Users/Boori/Projects/Boori/input/jupiter",
+    "password": "PRIS3010"
+  },
+  {
+    "type": "Jupiter",
+    "_comment": "...or a single PDF file. You can along supply a password key for the PDF file(s) (it is password-protected by default)",
+    "url": "/Users/Boori/Projects/Boori/input/jupiter_statement.pdf",
+    "password": "PRIS3010"
+  },
+  {
+    "type": "Hdfc",
+    "_comment": "HDFC can accept a folder of XLS files...",
+    "url": "/Users/Boori/Projects/Boori/input/hdfc"
+  },
+  {
+    "type": "Hdfc",
+    "_comment": "...or a single XLS file",
+    "url": "/Users/Boori/Projects/Boori/input/hdfc_statement_account1.pdf"
+  },
+  {
+    "type": "Hdfc",
+    "_comment": "You can also add multiple accounts of the same 'type'",
+    "url": "/Users/Boori/Projects/Boori/input/hdfc_statement_account2.pdf"
+  },
+  {
+    "_comment": "You can specify a 'name' key that would replace the default prefix added to your columns (by default, the type is the prefix). For example, if you want to denote that this is your son's HDFC account:",
+    "name": "Surya's HDFC",
+    "type": "Hdfc",
+    "url": "/Users/Boori/Projects/Boori/input/hdfc_statement_account3.pdf"
+  }
+]
